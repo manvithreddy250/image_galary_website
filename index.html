@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="C:\Users\sanih\Downloads\OneDrive\Desktop\All Projects\music album\style.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.vNw_hcxUnxGNxCk00eO6rQHaE8&pid=Api&P=0&h=180" alt="Image 1" class="thumbnail" onclick="openModal(0)">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.tLotgCDtzgTdwJcTiXWRCwHaEK&pid=Api&P=0&h=180" alt="Image 2" class="thumbnail" onclick="openModal(1)">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.voVmH_P-WhYnjVZYb-WUhwHaHa&pid=Api&P=0&h=180" alt="Image 3" class="thumbnail" onclick="openModal(2)">
+            <!-- Add more thumbnails as needed -->
+        </div>
+    </main>
+
+    <!-- Modal for full-size image view -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="caption" id="caption"></div>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="C:\Users\sanih\Downloads\OneDrive\Desktop\All Projects\music album\code.js"></script>
+</body>
+</html>
